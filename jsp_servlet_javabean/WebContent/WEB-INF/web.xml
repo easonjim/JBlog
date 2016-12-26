@@ -12,6 +12,17 @@
   </welcome-file-list>
   <!-- default page end -->
   <!-- servlet config start -->
+  <!-- 配置类似asp.net的Global.asax -->
+  <servlet> 
+  	<display-name>ProcessServlet</display-name> 
+  	<servlet-name>ProcessServlet</servlet-name> 
+  	<servlet-class>com.jsoft.jblog.servlet.ProcessServlet</servlet-class> 
+  	<load-on-startup>0</load-on-startup> 
+  </servlet>
+  <!-- 配置SessionStart -->
+  <listener>
+    <listener-class>com.jsoft.jblog.servlet.SessionListener</listener-class>
+  </listener>
   <servlet>
     <servlet-name>indexServlet</servlet-name>
     <servlet-class>com.jsoft.jblog.servlet.IndexServlet</servlet-class>
