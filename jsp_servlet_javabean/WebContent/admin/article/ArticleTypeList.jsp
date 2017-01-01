@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleTypeBean" %>
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨-ä¯ÀÀÎÄÕÂÀà±ð</title>
+	<title>åšå®¢åŽå°-æµè§ˆæ–‡ç« ç±»åˆ«</title>
 </head>
 <body>
     <center>
@@ -13,17 +13,17 @@
                 <td><jsp:include page="/admin/view/AdminLeft.jsp"/></td>
                 <td align="center" valign="top">
                 	<table width="560" border="0" cellspacing="0" cellpadding="0" rules="none">
-						<tr height="60"><td colspan="4">¡¾ä¯ÀÀÎÄÕÂÀà±ð¡¿</td></tr>
+						<tr height="60"><td colspan="4">ã€æµè§ˆæ–‡ç« ç±»åˆ«ã€‘</td></tr>
 						<tr height="30" bgcolor="#F5F4F4">
-							<td width="30%" style="text-indent:20">Àà±ðÃû³Æ</td>
-							<td align="center" width="55%">Àà±ðÃèÊö</td>
-							<td align="center"width="15%" colspan="2">²Ù×÷</td>
+							<td width="30%" style="text-indent:20">ç±»åˆ«åç§°</td>
+							<td align="center" width="55%">ç±»åˆ«æè¿°</td>
+							<td align="center"width="15%" colspan="2">æ“ä½œ</td>
 						</tr>
 						<%
 							ArrayList typelist=(ArrayList)request.getAttribute("typelist");
 							if(typelist==null||typelist.size()==0){
 						%>
-						<tr height="80"><td colspan="4" align="center"><li>Ã»ÓÐÀà±ð¿ÉÏÔÊ¾£¡</li></td></tr>
+						<tr height="80"><td colspan="4" align="center"><li>æ²¡æœ‰ç±»åˆ«å¯æ˜¾ç¤ºï¼</li></td></tr>
 						<%	
 							} 
 							else{
@@ -33,8 +33,8 @@
 						<tr height="35">
 							<td style="text-indent:20"><%=single.getTypeName()%></td>
 							<td align="center"><%=single.getTypeInfo() %></td>
-							<td align="center"><a href="ArticleServlet?action=typeModify&typeId=<%=single.getId() %>" class="word_purple ">¡ÌÐÞ¸Ä</a></td>
-							<td align="center"><a href="ArticleServlet?action=typeDelete&typeId=<%=single.getId() %>" class="word_purple ">¡ÁÉ¾³ý</a></td>							
+							<td align="center"><a href="ArticleServlet?action=typeModify&typeId=<%=single.getId() %>" class="word_purple ">âˆšä¿®æ”¹</a></td>
+							<td align="center"><a href="ArticleServlet?action=typeDelete&typeId=<%=single.getId() %>" class="word_purple ">Ã—åˆ é™¤</a></td>							
 						</tr>
 						<%
     							}

@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+﻿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
 <head>
-	<title>���ͺ�̨-�ϴ���Ƭ</title>
+	<title>博客后台-上传照片</title>
 </head>
 <body>
     <center>
@@ -12,19 +12,19 @@
                 <td align="center" valign="top">
                     <form action="PhotoServlet?action=upload" method="POST" enctype="multipart/form-data">
                 	<table border="0" width="100%" cellspacing="0" cellpadding="8">
-                		<tr height="60"><td colspan="2">���ϴ���Ƭ��</td></tr>
+                		<tr height="60"><td colspan="2">【上传照片】</td></tr>
                 		<tr>
-                			<td align="center">ѡ����Ƭ��</td>
+                			<td align="center">选择照片：</td>
                 			<td><input type="file" name="path" size="50"></td>
                 		</tr>
 	               		<tr>
-                			<td align="center">��Ƭ������</td>
+                			<td align="center">照片描述：</td>
                 			<td><input type="text" name="info" size="63"></td>
                 		</tr>
                 		<tr height="50">
                 			<td colspan="2" align="center">
-                				<input type="submit" value="�ϴ�" class="btn_bg">
-                				<input type="reset" value="����" class="btn_bg">
+                				<input type="submit" value="上传" class="btn_bg">
+                				<input type="reset" value="重置" class="btn_bg">
                 			</td>
                 		</tr>
                 	</table>

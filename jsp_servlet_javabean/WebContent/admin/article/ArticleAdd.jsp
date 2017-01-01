@@ -1,4 +1,4 @@
-<%@ page import="com.jsoft.jblog.dao.ArticleTypeDao"%>
+О╩©<%@ page import="com.jsoft.jblog.dao.ArticleTypeDao"%>
 <%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleTypeBean" %>
@@ -6,7 +6,7 @@
 <%-- <% ArrayList typelist=(ArrayList)session.getAttribute("artTypeList"); %> --%>
 <html>
 <head>
-	<title>╡╘©м╨Сл╗-╥╒╠Мндуб</title>
+	<title>Е█ Е╝╒Е░▌Е▐╟-Е▐▒Х║╗Ф√┤Г╚═</title>
 </head>
 <body>
     <center>
@@ -18,9 +18,9 @@
                 	<form action="ArticleServlet" method="post">
                 	<input type="hidden" name="action" value="add">
                 	<table border="0" width="100%" cellspacing="0" cellpadding="8">
-                		<tr height="50"><td colspan="2">║╬╥╒╠Мндуб║©</td></tr>
+                		<tr height="50"><td colspan="2">Ц─░Е▐▒Х║╗Ф√┤Г╚═Ц─▒</td></tr>
                 		<tr>
-                			<td align="center" width="20%">ндубюЮ╠Пё╨</td>
+                			<td align="center" width="20%">Ф√┤Г╚═Г╠╩Е┬╚О╪ </td>
                 			<td>
                 				<select name="typeId" style="width:100">
                 					<option value=""/>
@@ -38,33 +38,33 @@
                 			</td>
                 		</tr>
                 		<tr>
-                			<td align="center">ндуб╠ЙлБё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф═┤И╒≤О╪ </td>
                 			<td><input type="text" name="title" size="77"></td>
                 		</tr>
                 		<tr>
-                			<td align="center">ндубю╢т╢ё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф²╔Ф╨░О╪ </td>
                 			<td>
                 				<select name="create" style="width:100">
                 					<option value=""/>
-                					<option value="т╜╢╢">т╜╢╢</option>
-                					<option value="у╙вт">у╙вт</option>
+                					<option value="Е▌÷Е┬⌡">Е▌÷Е┬⌡</option>
+                					<option value="Ф▒≤Х┤╙">Ф▒≤Х┤╙</option>
                 				</select>
                 			</td>
                 		</tr>
 	               		<tr>
-                			<td align="center">ндубцХйЖё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф▐▐Х©╟О╪ </td>
                 			<td><input type="text" name="info" size="77"></td>
                 		</tr>
                 		<tr>
-                			<td align="center" valign="top">ндубдзхщё╨</td>
+                			<td align="center" valign="top">Ф√┤Г╚═Е├┘Е╝╧О╪ </td>
                 			<td>
                 				<textarea name="content" rows="8" cols="65"></textarea>
                 			</td>
                 		</tr>
                 		<tr height="30">
                 			<td colspan="2" align="center">
-                				<input type="submit" class="btn_bg" value="╠ё╢Ф">
-                				<input type="reset"  class="btn_bg" value="жьжц">
+                				<input type="submit" class="btn_bg" value="Д©²Е╜≤">
+                				<input type="reset"  class="btn_bg" value="И┤█Г╫╝">
                 			</td>
                 		</tr>
                 	</table>

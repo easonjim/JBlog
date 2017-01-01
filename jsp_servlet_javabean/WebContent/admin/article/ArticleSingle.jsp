@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleBean" %>
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨Ê×Ò³</title>
+	<title>åšå®¢åå°é¦–é¡µ</title>
 </head>
 <body>
     <center>
@@ -14,24 +14,24 @@
                     <% 
                     	ArticleBean single=(ArticleBean)request.getAttribute("articleSingle");
                     	if(single==null)
-                    		out.println("ÔÄ¶ÁÎÄÕÂÊ§°Ü£¡");
+                    		out.println("é˜…è¯»æ–‡ç« å¤±è´¥ï¼");
                     	else{
                     %>
                 	<table border="0" width="585" rules="all" cellpadding="0" cellspacing="0">
                 	    <tr height="35" align="right">
                   	        <td background="images/admin_sonTop.jpg">
-		               	         ·¢±íÊ±¼ä£º<%=single.getSdTime() %>&nbsp;&nbsp;&nbsp;&nbsp;
-                  	        	ÆÀÂÛ£º<%=single.getReview() %> Ìõ&nbsp;&nbsp;&nbsp;&nbsp;
-                	        	ÔÄ¶Á£º<%=single.getCount() %> ´Î&nbsp;&nbsp;&nbsp;&nbsp;
+		               	         å‘è¡¨æ—¶é—´ï¼š<%=single.getSdTime() %>&nbsp;&nbsp;&nbsp;&nbsp;
+                  	        	è¯„è®ºï¼š<%=single.getReview() %> æ¡&nbsp;&nbsp;&nbsp;&nbsp;
+                	        	é˜…è¯»ï¼š<%=single.getCount() %> æ¬¡&nbsp;&nbsp;&nbsp;&nbsp;
                 	    	</td>
                 	    </tr>
                 	    <tr height="15"><td></td></tr>
                 	    <tr><td align="center"><b><font style="font-size:25px"><%=single.getTitle()%></font></b></td></tr>
-                	    <tr><td align="right"><%=single.getCreate()%>£º<%=single.getInfo() %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+                	    <tr><td align="right"><%=single.getCreate()%>ï¼š<%=single.getInfo() %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
                 	    <tr height="15"><td></td></tr>
                 	    <tr height="200"><td valign="top" style="padding-left:20;padding-right:20"><%=single.getContent() %></td></tr>
                 	</table>
-					<input type="button" value="·µ&nbsp;»Ø" class="btn_bg" onClick="javascript:window.history.go(-1)">
+					<input type="button" value="è¿”&nbsp;å›" class="btn_bg" onClick="javascript:window.history.go(-1)">
                 	<%	} %>
                 </td>
             </tr>

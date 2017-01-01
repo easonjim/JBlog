@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+О╩©<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleTypeBean" %>
 <%
@@ -7,7 +7,7 @@
 <jsp:useBean id="modifySingle" class="com.jsoft.jblog.valuebean.ArticleBean" scope="request"/>
 <html>
 <head>
-	<title>╡╘©м╨Сл╗-пч╦дндуб</title>
+	<title>Е█ Е╝╒Е░▌Е▐╟-Д©╝Ф■╧Ф√┤Г╚═</title>
 </head>
 <body>
     <center>
@@ -21,13 +21,13 @@
                 	<input type="hidden" name="type" value="doModify">
                 	<input type="hidden" name="id" value="<%=modifySingle.getId() %>">
                 	<table border="0" width="100%" cellspacing="0" cellpadding="8">
-                		<tr height="30"><td colspan="2">║╬пч╦дндуб║©</td></tr>
+                		<tr height="30"><td colspan="2">Ц─░Д©╝Ф■╧Ф√┤Г╚═Ц─▒</td></tr>
                 		<tr>
-                			<td align="center" width="20%">ндубIDё╨</td>
+                			<td align="center" width="20%">Ф√┤Г╚═IDО╪ </td>
                 			<td><%=modifySingle.getId() %></td>
                 		</tr>
                 		<tr>
-                			<td align="center">ндубюЮ╠Пё╨</td>
+                			<td align="center">Ф√┤Г╚═Г╠╩Е┬╚О╪ </td>
                 			<td>
                 				<select name="typeId" style="width:100">
                 					<option value=""></option>
@@ -53,41 +53,41 @@
                 			</td>
                 		</tr>
                 		<tr>
-                			<td align="center">ндуб╠ЙлБё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф═┤И╒≤О╪ </td>
                 			<td><input type="text" name="title" value="<%=modifySingle.getTitle() %>" size="77"></td>
                 		</tr>
                 		<tr>
-                			<td align="center">ндубю╢т╢ё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф²╔Ф╨░О╪ </td>
                 			<td>
                 				<select name="create" style="width:100">
                 					<option value=""/>
-                					<%	if(modifySingle.getCreate().equals("т╜╢╢")){ %>
-                					<option value="т╜╢╢" selected>т╜╢╢</option>
-                					<option value="у╙вт">у╙вт</option>
+                					<%	if(modifySingle.getCreate().equals("Е▌÷Е┬⌡")){ %>
+                					<option value="Е▌÷Е┬⌡" selected>Е▌÷Е┬⌡</option>
+                					<option value="Ф▒≤Х┤╙">Ф▒≤Х┤╙</option>
                 					<%	
                 						}
-	                					if(modifySingle.getCreate().equals("у╙вт")){
+	                					if(modifySingle.getCreate().equals("Ф▒≤Х┤╙")){
 	                				%>
-	                				<option value="т╜╢╢">т╜╢╢</option>
-                					<option value="у╙вт" selected>у╙вт</option>		
+	                				<option value="Е▌÷Е┬⌡">Е▌÷Е┬⌡</option>
+                					<option value="Ф▒≤Х┤╙" selected>Ф▒≤Х┤╙</option>		
 	                				<%	} %>
                 				</select>
                 			</td>
                 		</tr>
 	               		<tr>
-                			<td align="center">ндубцХйЖё╨</td>
+                			<td align="center">Ф√┤Г╚═Ф▐▐Х©╟О╪ </td>
                 			<td><input type="text" name="info" value="<%=modifySingle.getInfo()%>" size="77"></td>
                 		</tr>
                 		<tr>
-                			<td align="center" valign="top">ндубдзхщё╨</td>
+                			<td align="center" valign="top">Ф√┤Г╚═Е├┘Е╝╧О╪ </td>
                 			<td>
                 				<textarea name="content" rows="7" cols="65"><%=modifySingle.getContent() %></textarea>
                 			</td>
                 		</tr>
                 		<tr height="25">
                 			<td colspan="2" align="center">
-                				<input type="submit" value="╠ё╢Ф" class="btn_bg">
-                				<input type="reset" value="жьжц" class="btn_bg">
+                				<input type="submit" value="Д©²Е╜≤" class="btn_bg">
+                				<input type="reset" value="И┤█Г╫╝" class="btn_bg">
                 			</td>
                 		</tr>
                 	</table>

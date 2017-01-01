@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <jsp:useBean id="typeSingle" class="com.jsoft.jblog.valuebean.ArticleTypeBean" scope="request"/>
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨-ÐÞ¸ÄÀà±ð</title>
+	<title>åšå®¢åŽå°-ä¿®æ”¹ç±»åˆ«</title>
 </head>
 <body>
     <center>
@@ -16,23 +16,23 @@
                 	<input type="hidden" name="type" value="doModify">
                 	<input type="hidden" name="typeId" value="<%=typeSingle.getId() %>">
                 	<table border="0" width="99%" cellspacing="0" cellpadding="8">
-                		<tr height="60"><td colspan="2">¡¾ÐÞ¸ÄÀà±ð¡¿</td></tr>
+                		<tr height="60"><td colspan="2">ã€ä¿®æ”¹ç±»åˆ«ã€‘</td></tr>
                 		<tr>
-                			<td align="center" width="20%">ÎÄÕÂID£º</td>
+                			<td align="center" width="20%">æ–‡ç« IDï¼š</td>
                 			<td><%=typeSingle.getId() %></td>
                 		</tr>
                 		<tr>
-                			<td align="center">Àà±ðÃû³Æ£º</td>
+                			<td align="center">ç±»åˆ«åç§°ï¼š</td>
                 			<td><input type="text" name="typeName" value="<%=typeSingle.getTypeName() %>" size="50"></td>
                 		</tr>
                    		<tr>
-                			<td align="center">Àà±ðÃèÊö£º</td>
+                			<td align="center">ç±»åˆ«æè¿°ï¼š</td>
                 			<td><input type="text" name="typeInfo" value="<%=typeSingle.getTypeInfo()%>" size="50"></td>
                 		</tr>
                 		<tr height="50">
                 			<td colspan="2" align="center">
-                				<input type="submit" value="ÐÞ¸Ä" class="btn_bg">
-                				<input type="reset" value="ÖØÖÃ" class="btn_bg">
+                				<input type="submit" value="ä¿®æ”¹" class="btn_bg">
+                				<input type="reset" value="é‡ç½®" class="btn_bg">
                 			</td>
                 		</tr>
                 	</table>

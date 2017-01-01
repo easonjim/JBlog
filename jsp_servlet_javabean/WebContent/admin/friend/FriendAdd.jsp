@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨-Ìí¼ÓºÃÓÑ</title>
+	<title>åšå®¢åŽå°-æ·»åŠ å¥½å‹</title>
 </head>
 <body>
     <center>
@@ -13,30 +13,30 @@
                 	<form action="FriendServlet" method="post">
                 	<input type="hidden" name="action" value="add">
                 	<table border="0" width="90%" height="300" cellspacing="0" cellpadding="8">
-                		<tr height="60"><td colspan="2">¡¾Ìí¼ÓºÃÓÑ¡¿</td></tr>
+                		<tr height="60"><td colspan="2">ã€æ·»åŠ å¥½å‹ã€‘</td></tr>
                 		<tr>
-                			<td align="right" width="25%">ºÃÓÑÐÕÃû£º</td>
+                			<td align="right" width="25%">å¥½å‹å§“åï¼š</td>
                 			<td><input type="text" name="name" size="40"></td>
                 		</tr>
                 		<tr>
-                			<td align="right">ÐÔ&nbsp;&nbsp;±ð£º</td>
+                			<td align="right">æ€§&nbsp;&nbsp;åˆ«ï¼š</td>
                 			<td>
-								<input type="radio" name="sex" value="ÄÐ" class="noborder" checked="checked">ÄÐ
-								<input type="radio" name="sex" value="Å®" class="noborder">Å®
+								<input type="radio" name="sex" value="ç”·" class="noborder" checked="checked">ç”·
+								<input type="radio" name="sex" value="å¥³" class="noborder">å¥³
                 			</td>
                 		</tr>
 	               		<tr>
-                			<td align="right">QQºÅÂë£º</td>
+                			<td align="right">QQå·ç ï¼š</td>
                 			<td><input type="text" name="oicq" size="40"></td>
                 		</tr>
                 		<tr>
-                			<td align="right">BLOG£º</td>
+                			<td align="right">BLOGï¼š</td>
                 			<td><input type="text" name="blog" size="60"></td>
                 		</tr>
                 		<tr height="50">
                 			<td colspan="2" align="center">
-                				<input type="submit" class="btn_bg" value="±£´æ">
-                				<input type="reset" class="btn_bg" value="ÖØÖÃ">
+                				<input type="submit" class="btn_bg" value="ä¿å­˜">
+                				<input type="reset" class="btn_bg" value="é‡ç½®">
                 			</td>
                 		</tr>
                 	</table>

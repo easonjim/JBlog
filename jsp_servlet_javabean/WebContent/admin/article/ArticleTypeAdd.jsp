@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨-Ìí¼ÓÎÄÕÂÀà±ð</title>
+	<title>åšå®¢åŽå°-æ·»åŠ æ–‡ç« ç±»åˆ«</title>
 </head>
 <body>
     <center>
@@ -13,19 +13,19 @@
                     <form action="ArticleServlet" method="post">
                 	<input type="hidden" name="action" value="typeAdd">
                 	<table border="0" width="80%" cellspacing="0" cellpadding="8">
-                		<tr height="60"><td colspan="2">¡¾Ìí¼ÓÎÄÕÂÀà±ð¡¿</td></tr>
+                		<tr height="60"><td colspan="2">ã€æ·»åŠ æ–‡ç« ç±»åˆ«ã€‘</td></tr>
                 		<tr>
-                			<td align="center">Àà±ðÃû³Æ£º</td>
+                			<td align="center">ç±»åˆ«åç§°ï¼š</td>
                 			<td><input type="text" name="typeName" size="50"></td>
                 		</tr>
 	               		<tr>
-                			<td align="center">Àà±ðÃèÊö£º</td>
+                			<td align="center">ç±»åˆ«æè¿°ï¼š</td>
                 			<td><input type="text" name="typeInfo" size="50"></td>
                 		</tr>
                 		<tr height="50">
                 			<td colspan="2" align="center">
-                				<input type="submit" class="btn_bg" value="±£´æ">
-                				<input type="reset" class="btn_bg" value="ÖØÖÃ">
+                				<input type="submit" class="btn_bg" value="ä¿å­˜">
+                				<input type="reset" class="btn_bg" value="é‡ç½®">
                 			</td>
                 		</tr>
                 	</table>

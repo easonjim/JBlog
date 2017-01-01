@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
 <head>
-	<title>ñöÒô²©¿Í-³É¹¦ÌáÊ¾</title>
+	<title>è†éŸ³åšå®¢-æˆåŠŸæç¤º</title>
 </head>
 <body>
     <center>
@@ -11,7 +11,7 @@
                 <td width="180" valign="top" valign="top"><jsp:include page="view/AdminLeft.jsp"/></td>
                 <td width="598" align="center" valign="top">
                 	<table border="10" bordercolor="lightgrey" rules="none" width="80%" height="200" cellspacing="0" cellpadding="0" style="margin-top:30" >
-                  		<tr height="50"><td style="text-indent:20">ÓÑÇéÌáÊ¾</td></tr>
+                  		<tr height="50"><td style="text-indent:20">å‹æƒ…æç¤º</td></tr>
                   		<tr><td align="center"><%=request.getAttribute("messages") %></td></tr>
                   		<tr><td align="center"><%=request.getAttribute("href") %></td></tr>
             		</table>            		

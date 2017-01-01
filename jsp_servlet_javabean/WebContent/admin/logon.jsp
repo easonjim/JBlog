@@ -1,14 +1,14 @@
-<%@ page contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page contentType="text/html; charset=gb2312"%>
 <% 
 	String path = request.getContextPath();
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	String mess=(String)request.getAttribute("messages");
 	if(mess==null||mess.equals(""))
-		mess="<li>»¶Ó­µÇÂ¼£¡</li>";
+		mess="<li>æ¬¢è¿Žç™»å½•ï¼</li>";
 %>
 <html>
 	<head>
-		<title>²©Ö÷µÇÂ¼</title>
+		<title>åšä¸»ç™»å½•</title>
 		<base href="<%=basePath%>">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -21,19 +21,19 @@
 			 	<table border="0" cellpadding="0" cellspacing="0" style="margin-top:300">
 					<tr><td colspan="2" align="center"><%=mess %></td></tr>
 					<tr height="30">
-						<td>ÓÃ»§Ãû£º</td>
+						<td>ç”¨æˆ·åï¼š</td>
 						<td><input type="text" name="userName" style="width:200"></td>
 					</tr>
 					<tr height="30">
-						<td>ÃÜ&nbsp;&nbsp;Âë£º</td>
+						<td>å¯†&nbsp;&nbsp;ç ï¼š</td>
 						<td><input type="password" name="userPass" style="width:200"></td>
 					</tr>				
 					<tr>
 						<td></td>
 						<td>
-							<input type="submit" class="btn_bg" value="µÇ Â¼">
-			    			<input type="reset" class="btn_bg" value="ÖØ ÖÃ">	
-		    				<a href="index.jsp">·µ»ØÊ×Ò³</a>
+							<input type="submit" class="btn_bg" value="ç™» å½•">
+			    			<input type="reset" class="btn_bg" value="é‡ ç½®">	
+		    				<a href="index.jsp">è¿”å›žé¦–é¡µ</a>
 		    			</td>
 					</tr>				
 				 </table>

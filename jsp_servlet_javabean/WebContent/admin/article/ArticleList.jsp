@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+О╩©<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleBean" %>
 <%@ page import="com.jsoft.jblog.valuebean.ArticleTypeBean" %>
 <html>
 <head>
-	<title>╡╘©м╨Сл╗йврЁ</title>
+	<title>Е█ Е╝╒Е░▌Е▐╟И╕√И║╣</title>
 </head>
 <body>
     <center>
@@ -14,19 +14,19 @@
                 <td ><jsp:include page="/admin/view/AdminLeft.jsp"/></td>
                 <td align="center" valign="top">
                 	<table width="560" border="0" cellspacing="0" cellpadding="0" rules="none">
-						<tr height="60"><td colspan="4">║╬Д╞ююндуб║©</td></tr>
+						<tr height="60"><td colspan="4">Ц─░Ф╣▐Х╖┬Ф√┤Г╚═Ц─▒</td></tr>
 						<tr>
 							<td align="right" colspan="4">
 								<form action="ArticleServlet" method="post">
 									<input type="hidden" name="action" value="adminSelectList">
-									ндубюЮ╠Пё╨
+									Ф√┤Г╚═Г╠╩Е┬╚О╪ 
 									<select name="typeId">
 										<option value=""></option>
 										<%
             	            				ArrayList typelist=(ArrayList)session.getAttribute("artTypeList");
 		        	                		if(typelist==null||typelist.size()==0){
         		    	            	%>
-        		        	        	<option value="">ц╩спюЮ╠П©иотй╬</option>
+        		        	        	<option value="">Ф╡║Ф°┴Г╠╩Е┬╚Е▐╞Ф≤╬Г╓╨</option>
         		            	    	<%
 		                        			}
 		                        			else{
@@ -39,20 +39,20 @@
 		        	                		}
         		    	            	%>
 									</select>
-									<input type="submit" value="отй╬" class="btn_bg">	
+									<input type="submit" value="Ф≤╬Г╓╨" class="btn_bg">	
 								</form>
 							</td>
 						</tr>
 						<tr height="30" bgcolor="#F5F4F4">
-							<td width="55%" style="text-indent:20">ндуб╠ЙлБ</td>
-							<td align="center" width="30%">╥╒╠Мй╠╪Д</td>
-							<td align="center"width="15%" colspan="2">╡ывВ</td>
+							<td width="55%" style="text-indent:20">Ф√┤Г╚═Ф═┤И╒≤</td>
+							<td align="center" width="30%">Е▐▒Х║╗Ф≈╤И≈╢</td>
+							<td align="center"width="15%" colspan="2">Ф⌠█Д╫°</td>
 						</tr>
 						<%
 							ArrayList articlelist=(ArrayList)request.getAttribute("articleList");
 							if(articlelist==null||articlelist.size()==0){
 						%>
-						<tr height="80"><td colspan="4" align="center"><li>ц╩спндуб©иотй╬ё║</li></td></tr>
+						<tr height="80"><td colspan="4" align="center"><li>Ф╡║Ф°┴Ф√┤Г╚═Е▐╞Ф≤╬Г╓╨О╪│</li></td></tr>
 						<%	
 							} 
 							else{
@@ -62,8 +62,8 @@
 						<tr height="35">
 							<td style="text-indent:20"><a href="ArticleServlet?action=adminSelectSingle&id=<%=single.getId()%>" class="word_purple "><%=single.getTitle(22)%></a></td>
 							<td align="center"><%=single.getSdTime() %></td>
-							<td align="center"><a href="ArticleServlet?action=modify&id=<%=single.getId() %>&typeId=<%=single.getTypeId()%>" class="word_purple ">║лпч╦д</a></td>
-							<td align="center"><a href="ArticleServlet?action=delete&id=<%=single.getId() %>&typeId=<%=single.getTypeId()%>" class="word_purple ">║аи╬ЁЩ</a></td>							
+							<td align="center"><a href="ArticleServlet?action=modify&id=<%=single.getId() %>&typeId=<%=single.getTypeId()%>" class="word_purple ">Б┬ Д©╝Ф■╧</a></td>
+							<td align="center"><a href="ArticleServlet?action=delete&id=<%=single.getId() %>&typeId=<%=single.getTypeId()%>" class="word_purple ">ц≈Е┬═И≥╓</a></td>							
 						</tr>
 						<%
     							}

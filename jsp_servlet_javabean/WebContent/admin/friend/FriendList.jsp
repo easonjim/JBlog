@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+О╩©<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.jsoft.jblog.valuebean.FriendBean" %>
 <html>
 <head>
-	<title>╡╘©м╨Сл╗-Д╞ююкЫсп╨цся</title>
+	<title>Е█ Е╝╒Е░▌Е▐╟-Ф╣▐Х╖┬Ф┴─Ф°┴Е╔╫Е▐▀</title>
 </head>
 <body>
     <center>
@@ -13,18 +13,18 @@
                 <td width="180"><jsp:include page="/admin/view/AdminLeft.jsp"/></td>
                 <td align="center" valign="top">
                 	<table border="0" width="540" cellspacing="0" cellpadding="0" rules="none">
-						<tr height="60"><td colspan="5">║╬Д╞ююкЫсп╨цся║©</td></tr>
+						<tr height="60"><td colspan="5">Ц─░Ф╣▐Х╖┬Ф┴─Ф°┴Е╔╫Е▐▀Ц─▒</td></tr>
 						<tr height="30" bgcolor="#F5F4F4">
-							<td width="30%" style="text-indent:20">╨цсяцШЁф</td>
-							<td align="center" width="25%">пт╠П</td>
+							<td width="30%" style="text-indent:20">Е╔╫Е▐▀Е░█Г╖╟</td>
+							<td align="center" width="25%">Ф─╖Е┬╚</td>
 							<td align="center" width="25%">OICQ</td>
-							<td align="center"width="20%" colspan="2">╡ывВ</td>
+							<td align="center"width="20%" colspan="2">Ф⌠█Д╫°</td>
 						</tr>
 						<%
 							ArrayList friendList=(ArrayList)request.getAttribute("friendList");
 							if(friendList==null||friendList.size()==0){
 						%>
-						<tr height="80"><td colspan="5" align="center"><li>ц╩сп╨цся©иотй╬ё║</li></td></tr>
+						<tr height="80"><td colspan="5" align="center"><li>Ф╡║Ф°┴Е╔╫Е▐▀Е▐╞Ф≤╬Г╓╨О╪│</li></td></tr>
 						<%	
 							} 
 							else{
@@ -35,8 +35,8 @@
 							<td style="text-indent:20"><a href="FriendServlet?action=adminSingle&id=<%=single.getId() %>" class="word_purple "><%=single.getName()%></a></td>
 							<td align="center"><%=single.getSex() %></td>
 							<td align="center"><%=single.getOicq() %></td>
-							<td align="center"><a href="FriendServlet?action=modify&id=<%=single.getId() %>" class="word_purple ">║лпч╦д</a></td>
-							<td align="center"><a href="FriendServlet?action=delete&id=<%=single.getId() %>" class="word_purple ">║аи╬ЁЩ</a></td>							
+							<td align="center"><a href="FriendServlet?action=modify&id=<%=single.getId() %>" class="word_purple ">Б┬ Д©╝Ф■╧</a></td>
+							<td align="center"><a href="FriendServlet?action=delete&id=<%=single.getId() %>" class="word_purple ">ц≈Е┬═И≥╓</a></td>							
 						</tr>
 						<%
     							}

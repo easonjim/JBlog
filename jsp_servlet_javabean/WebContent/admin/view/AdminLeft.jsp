@@ -1,39 +1,39 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
     <head>
-    	<title>²©¿ÍºóÌ¨-²àÀ¸</title>
+    	<title>åšå®¢åŽå°-ä¾§æ </title>
     </head>
 <body>
     <table width="193" height="401" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
         <tr>
         	<td width="191" height="401" valign="top">
         		<table width="100%" border="0" cellpadding="0" cellspacing="0">
-        			<tr><td height="32" colspan="4" align="center" background="images/adminLmenu_1.jpg" class="word_menuHead">ÎÄÕÂ¹ÜÀí</td></tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/article/ArticleAdd.jsp">¡ï·¢±íÎÄÕÂ</a></td>
+        			<tr><td height="32" colspan="4" align="center" background="images/adminLmenu_1.jpg" class="word_menuHead">æ–‡ç« ç®¡ç†</td></tr>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/article/ArticleAdd.jsp">â˜…å‘è¡¨æ–‡ç« </a></td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="admin/article/ArticleList.jsp">¡ïä¯ÀÀ/ÐÞ¸Ä/É¾³ýÎÄÕÂ</td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="admin/article/ArticleList.jsp">â˜…æµè§ˆ/ä¿®æ”¹/åˆ é™¤æ–‡ç« </td>
         			</tr>
-        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">ÎÄÕÂÀà±ð¹ÜÀí</td>
+        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">æ–‡ç« ç±»åˆ«ç®¡ç†</td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/article/ArticleTypeAdd.jsp">¡ïÌí¼ÓÀà±ð</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/article/ArticleTypeAdd.jsp">â˜…æ·»åŠ ç±»åˆ«</a></td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="ArticleServlet?action=typeSelect">¡ïä¯ÀÀ/ÐÞ¸Ä/É¾³ýÀà±ð</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="ArticleServlet?action=typeSelect">â˜…æµè§ˆ/ä¿®æ”¹/åˆ é™¤ç±»åˆ«</a></td>
         			</tr>
-        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">Ïà²á¹ÜÀí</td>
+        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">ç›¸å†Œç®¡ç†</td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/photo/PhotoUpload.jsp">¡ïÉÏ´«ÕÕÆ¬</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30" class="tableBorder_B"><a href="admin/photo/PhotoUpload.jsp">â˜…ä¸Šä¼ ç…§ç‰‡</a></td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="PhotoServlet?action=adminList">¡ïä¯ÀÀ/É¾³ýÕÕÆ¬</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="PhotoServlet?action=adminList">â˜…æµè§ˆ/åˆ é™¤ç…§ç‰‡</a></td>
         			</tr>
-        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">ºÃÓÑ¹ÜÀí</td>
+        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">å¥½å‹ç®¡ç†</td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"class="tableBorder_B"><a href="admin/friend/FriendAdd.jsp">¡ïÌí¼ÓºÃÓÑ</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"class="tableBorder_B"><a href="admin/friend/FriendAdd.jsp">â˜…æ·»åŠ å¥½å‹</a></td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="FriendServlet?action=adminList">¡ïä¯ÀÀ/ÐÞ¸Ä/É¾³ýºÃÓÑ</a></td>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="FriendServlet?action=adminList">â˜…æµè§ˆ/ä¿®æ”¹/åˆ é™¤å¥½å‹</a></td>
         			</tr>
-        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">ÁôÑÔ¹ÜÀí</td>
+        			<tr><td height="30" colspan="4" align="center" background="images/adminLmenu_2.jpg" class="word_menuHead">ç•™è¨€ç®¡ç†</td>
         			</tr>
-        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="WordServlet?action=adminselect">¡ïä¯ÀÀ/É¾³ýÁôÑÔ</a></td></tr>
+        			<tr valign="bottom"><td height="27" colspan="4" bgcolor="#E59FD5" style="text-indent:30"><a href="WordServlet?action=adminselect">â˜…æµè§ˆ/åˆ é™¤ç•™è¨€</a></td></tr>
         			</table>
    		    </td>
        	    <td valign="top" bgcolor="#FFFFFF" class="tableBorder_R">&nbsp;</td>

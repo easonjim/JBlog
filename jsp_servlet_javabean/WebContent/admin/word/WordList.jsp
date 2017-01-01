@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+ï»¿<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <%@ page import="java.util.List" %>
 <%@ page import="com.jsoft.jblog.valuebean.WordBean" %>
 
 <html>
 <head>
-	<title>²©¿ÍºóÌ¨-²é¿´ËùÓĞÁôÑÔ</title>
+	<title>åšå®¢åå°-æŸ¥çœ‹æ‰€æœ‰ç•™è¨€</title>
 </head>
 <body>
     <center>
@@ -14,26 +14,26 @@
                 <td valign="top" bgcolor="#E59FD5"><jsp:include page="/admin/view/AdminLeft.jsp"/></td>
                 <td align="center" valign="top">
                 	<table width="560" border="0" cellspacing="0" cellpadding="0" style="word-break:break-all">
-                  	<tr height="40"><td colspan="2">¡¾ä¯ÀÀÁôÑÔ¡¿</td></tr>
+                  	<tr height="40"><td colspan="2">ã€æµè§ˆç•™è¨€ã€‘</td></tr>
                   	<% 
 			        	List wordlist=(List)request.getAttribute("adminwordList"); 
             			if(wordlist==null||wordlist.size()==0)
-			            	out.print("<tr height='60'><td align='center'>ÔİÎŞÁôÑÔ¿ÉÏÔÊ¾£¡</td></tr>");
+			            	out.print("<tr height='60'><td align='center'>æš‚æ— ç•™è¨€å¯æ˜¾ç¤ºï¼</td></tr>");
             			else{
                      		int num=wordlist.size();     
-                    		out.print("<tr height='40'><td align='center'>¡¾ÎÒµÄÁôÑÔ ¹² "+num+" Ìõ¡¿</td></tr>");                            
+                    		out.print("<tr height='40'><td align='center'>ã€æˆ‘çš„ç•™è¨€ å…± "+num+" æ¡ã€‘</td></tr>");                            
             				int i=0;
                         	while(i<wordlist.size()){
                          		WordBean wordSingle=(WordBean)wordlist.get(i);            
                         %>
  						<tr height="40">
  							<td style="text-indent:20">
- 							    ¡ø <b><%=wordSingle.getWordAuthor() %></b>
+ 							    â–² <b><%=wordSingle.getWordAuthor() %></b>
  							</td>
  						</tr>
  						<tr align="right" height="20"><td width="40%"><%=wordSingle.getWordTime()%>&nbsp;&nbsp;</td></tr>
  						<tr height="60"><td style="text-indent:20" colspan="2" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;<%=wordSingle.getWordContent()%></td></tr> 						
-		                <tr height="30"><td align="right" colspan="2"><a href="WordServlet?action=delete&id=<%=wordSingle.getId() %>">[É¾³ıÁôÑÔ]</a></td></tr>
+		                <tr height="30"><td align="right" colspan="2"><a href="WordServlet?action=delete&id=<%=wordSingle.getId() %>">[åˆ é™¤ç•™è¨€]</a></td></tr>
 		                <tr height="1"><td background="images/line.jpg" colspan="2"></td></tr>
                         <%
                         			i++;

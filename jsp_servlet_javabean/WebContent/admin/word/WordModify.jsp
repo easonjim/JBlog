@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=gb2312"%>
+๏ปฟ<%@ page language="java" contentType="text/html; charset=gb2312"%>
 <html>
 <head>
-	<title>ฒฉฟอบ๓ฬจสืาณ</title>
+	<title>ๅๅฎขๅๅฐ้ฆ–้กต</title>
 </head>
 <body>
     <center>
@@ -9,7 +9,7 @@
             <tr><td colspan="2"><%@ include file="view/AdminTop.jsp" %></td></tr>
             <tr>
                 <td><jsp:include page="AdminLeft.jsp"/></td>
-                <td>บ๓ฬจึ๗าณฤฺศÝ</td>
+                <td>ๅๅฐไธป้กตๅ…ๅฎน</td>
             </tr>
             <tr><td colspan="2"><%@ include file="view/AdminEnd.jsp" %></td></tr>
         </table>
