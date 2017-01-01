@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import com.jsoft.jblog.dao.LogonDao;
 import com.jsoft.jblog.valuebean.MasterBean;
+import com.jsoft.jblog.toolsbean.SqlInject;
 
 public class LogXServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,7 +45,7 @@ public class LogXServlet extends HttpServlet {
 	public boolean validateLogon(HttpServletRequest request, HttpServletResponse response){
 		boolean mark=true;
 		String messages="";
-		String name=request.getParameter("userName");
+		String name= request.getParameter("userName");
 		String password=request.getParameter("userPass");
 		if(name==null||name.equals("")){
 			mark=false;
