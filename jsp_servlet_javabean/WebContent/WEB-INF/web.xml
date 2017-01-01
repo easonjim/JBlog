@@ -1,76 +1,86 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>JBlog</display-name>
-  <!-- default page start -->
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <!-- default page end -->
-  <!-- servlet config start -->
-  <!-- 配置类似asp.net的Global.asax -->
-  <servlet> 
-  	<display-name>ProcessServlet</display-name> 
-  	<servlet-name>ProcessServlet</servlet-name> 
-  	<servlet-class>com.jsoft.jblog.servlet.ProcessServlet</servlet-class> 
-  	<load-on-startup>0</load-on-startup> 
-  </servlet>
-  <!-- 配置SessionStart -->
-  <listener>
-    <listener-class>com.jsoft.jblog.servlet.SessionListener</listener-class>
-  </listener>
-  <servlet>
-    <servlet-name>indexServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.IndexServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>articleServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.ArticleServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>photoServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.PhotoServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>friendServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.FriendServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>wordServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.WordServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>logonServlet</servlet-name>
-    <servlet-class>com.jsoft.jblog.servlet.LogXServlet</servlet-class>
-  </servlet>  
-  
-  <servlet-mapping>
-    <servlet-name>indexServlet</servlet-name>
-    <url-pattern>/IndexServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>articleServlet</servlet-name>
-    <url-pattern>/ArticleServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>photoServlet</servlet-name>
-    <url-pattern>/PhotoServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>friendServlet</servlet-name>
-    <url-pattern>/FriendServlet</url-pattern>
-  </servlet-mapping>  
-  <servlet-mapping>
-    <servlet-name>wordServlet</servlet-name>
-    <url-pattern>/WordServlet</url-pattern>
-  </servlet-mapping>    
-  <servlet-mapping>
-    <servlet-name>logonServlet</servlet-name>
-    <url-pattern>/LogonServlet</url-pattern>
-  </servlet-mapping>
-  <!-- servlet config end -->
+	<display-name>JBlog</display-name>
+	<!-- default page start -->
+	<welcome-file-list>
+	  <welcome-file>index.html</welcome-file>
+	  <welcome-file>index.htm</welcome-file>
+	  <welcome-file>index.jsp</welcome-file>
+	  <welcome-file>default.html</welcome-file>
+	  <welcome-file>default.htm</welcome-file>
+	  <welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- default page end -->
+	<!-- servlet config start -->
+	<!-- 配置类似asp.net的Global.asax -->
+	<servlet> 
+		<display-name>ProcessServlet</display-name> 
+		<servlet-name>ProcessServlet</servlet-name> 
+		<servlet-class>com.jsoft.jblog.servlet.ProcessServlet</servlet-class> 
+		<load-on-startup>0</load-on-startup> 
+	</servlet>
+	<!-- 配置SessionStart -->
+	<listener>
+	  <listener-class>com.jsoft.jblog.listener.SessionListener</listener-class>
+	</listener>
+	<!-- filter实现防止SQL注入的过滤器 ,这种方式不太高效-->
+	<!-- <filter>
+	    <filter-name>antiSqlInjection</filter-name>
+	    <filter-class>com.jsoft.jblog.filter.AntiSqlInjectionfilter</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>antiSqlInjection</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+	
+	<servlet>
+	  <servlet-name>indexServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>articleServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.ArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>photoServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.PhotoServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>friendServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.FriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>wordServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.WordServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>logonServlet</servlet-name>
+	  <servlet-class>com.jsoft.jblog.servlet.LogXServlet</servlet-class>
+	</servlet>  
+	
+	<servlet-mapping>
+	  <servlet-name>indexServlet</servlet-name>
+	  <url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>articleServlet</servlet-name>
+	  <url-pattern>/ArticleServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>photoServlet</servlet-name>
+	  <url-pattern>/PhotoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>friendServlet</servlet-name>
+	  <url-pattern>/FriendServlet</url-pattern>
+	</servlet-mapping>  
+	<servlet-mapping>
+	  <servlet-name>wordServlet</servlet-name>
+	  <url-pattern>/WordServlet</url-pattern>
+	</servlet-mapping>    
+	<servlet-mapping>
+	  <servlet-name>logonServlet</servlet-name>
+	  <url-pattern>/LogonServlet</url-pattern>
+	</servlet-mapping>
+	<!-- servlet config end -->
 </web-app>

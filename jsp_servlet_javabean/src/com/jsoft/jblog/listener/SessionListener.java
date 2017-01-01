@@ -1,4 +1,4 @@
-﻿package com.jsoft.jblog.servlet;
+﻿package com.jsoft.jblog.listener;
 
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
